@@ -35,4 +35,14 @@ class CalculatorTest {
         assertEquals(2, actual);
     }
 
+    @Test
+    public void testMul() throws Exception{
+        int a = 4;
+        int b = 2;
+        Calculator calc = new Calculator();
+        int actual = calc.mul(a,b);
+
+        assertEquals(8, actual);
+    }
+
 }
