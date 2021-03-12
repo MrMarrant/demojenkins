@@ -18,6 +18,9 @@ public class Calculator {
         return valueA / valueB;
     }
 
+    /**
+     * Méthode Pair // OK
+     */
     public boolean pair(int valueA){
         if (valueA % 2  == 0){
             return true;
@@ -27,6 +30,9 @@ public class Calculator {
         }
     }
 
+    /**
+     * Méthode Premier // OK
+     */
     public boolean premier(int valueA){
         int result;
         boolean flag = true;

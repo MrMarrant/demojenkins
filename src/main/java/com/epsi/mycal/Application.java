@@ -3,6 +3,9 @@ package com.epsi.mycal;
 import java.util.Scanner;
 
 public class Application {
+		/**
+		 * Méthode Application Main // OK
+		 */
 		public static void main(String[] args) {
 				int valueA;
 				int valueB;
