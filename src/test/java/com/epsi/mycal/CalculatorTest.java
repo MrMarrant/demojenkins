@@ -73,4 +73,13 @@ class CalculatorTest {
         assertEquals(true, actual);
     }
 
+    @Test
+    public void testisFind() throws Exception{
+        int valueA = 1;
+        Calculator calc = new Calculator();
+        boolean actual = calc.isFind(valueA);
+
+        assertEquals(true, actual);
+    }
+
 }

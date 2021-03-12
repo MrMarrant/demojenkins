@@ -18,6 +18,7 @@ public class Application {
 			System.out.println("2. Soustraction");
 			System.out.println("3. Multiplication");
 			System.out.println("4. Division");
+			System.out.println("5. Quitter");
 			int choix = myObj.nextInt();
 			switch (choix) {
 				case 1:
@@ -51,6 +52,9 @@ public class Application {
 					valueB = myObj.nextInt();
 					actual = calc.div(valueA, valueB);
 					System.out.println("Résultat de la division :" + actual + "\n");
+					break;
+				case 5:
+					i = false;
 					break;
 				default:
 					System.out.println("Veuillez indiquer une valeur valide \n");

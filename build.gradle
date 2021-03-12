@@ -4,6 +4,8 @@ plugins {
     id 'jacoco'
     id 'checkstyle'
     id 'com.github.spotbugs' version "4.7.0"
+    //id 'de.aaschmid.cpd' version '3.1'
+    id 'pmd'
 }
 
 jacocoTestReport {
@@ -26,6 +28,7 @@ dependencies {
 
 test {
     useJUnitPlatform()
+    ignoreFailures(true)
 }
 
 def classesJava = "${project.buildDir}/classes/java/main/"
@@ -41,9 +44,24 @@ task checkstyleMain (type: Checkstyle, overwrite: true) {
     classpath = fileTree(classesJava)
     configFile = file("${rootProject.rootDir}/config/checkstyle/checkstyle.xml")
 }
+def javasRoot = "${rootProject.rootDir}/src/main/java"
+task pmdMain(type: Pmd, overwrite: true) {
+    ignoreFailures = true
+    description 'Runs PMD inspection against sourcesets.'
+    group = 'Code Quality'
+    ruleSetFiles = files("${rootProject.rootDir}/pmd_rules.xml")
+    source = fileTree(javasRoot)
+    include '**/*.java'
+    exclude '**/gen/**'
+    reports {
+        xml.enabled = true
+        html.enabled = false
+    }
+}
 
 spotbugs {
 
     ignoreFailures = true
 
 }
+

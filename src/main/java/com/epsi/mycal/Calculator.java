@@ -52,4 +52,17 @@ public class Calculator {
 			return false;
 		}
 	}
+
+    	public boolean isFind(int valueA) { //1
+		int value = 1234;
+		String str_value = Integer.toString(value);
+		String str_valueA = Integer.toString(valueA);
+		String newValue = str_value.replace(str_valueA, "0");
+		if (newValue != str_value){
+			return true;
+		}
+		else{
+			return false;
+		}
+	}
 }
