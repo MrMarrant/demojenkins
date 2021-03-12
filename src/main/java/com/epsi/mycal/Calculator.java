@@ -19,7 +19,7 @@ public class Calculator {
     }
 
     public boolean pair(int valueA){
-        if (valueA % 2  == 0) {
+        if (valueA % 2  == 0){
             return true;
         }
         else{
@@ -30,23 +30,22 @@ public class Calculator {
     public boolean premier(int valueA){
         int result;
         boolean flag = true;
-        for(int i=2; i <= valueA/2; i++)
-        {
+        for(int i=2; i <= valueA/2; i++){
             //nombre est divisible par lui-meme
             result = valueA%i;
 
             //si le reste est 0, alors arrete la boucle. Sinon continuer la boucle
-            if(result == 0)
-            {
+            if(result == 0){
                 flag = false;
                 break;
             }
         }
 
-        if(flag)
-        {
+        if(flag){
             return true;
         }
-        else{ return false;}
+        else{
+            return false;
+        }
     }
 }
