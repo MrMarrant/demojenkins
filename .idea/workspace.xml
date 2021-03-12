@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="af9f2b78-97ab-46cf-b0c5-474c87dbc841" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epsi/mycal/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epsi/mycal/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/epsi/mycal/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epsi/mycal/Calculator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -160,7 +161,7 @@
       <workItem from="1615465115558" duration="4028000" />
       <workItem from="1615469276124" duration="93000" />
       <workItem from="1615534997917" duration="8502000" />
-      <workItem from="1615545332890" duration="5633000" />
+      <workItem from="1615545332890" duration="6587000" />
     </task>
     <servers />
   </component>
