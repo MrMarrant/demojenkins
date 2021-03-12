@@ -2,7 +2,7 @@ package com.epsi.mycal;
 
 public class Calculator {
 
-    public int add(int valueA, int valueB){
+  public int add(int valueA, int valueB){
         return valueA + valueB ;
     }
 
