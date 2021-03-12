@@ -18,29 +18,29 @@ class CalculatorTest {
     }
     @Test
     public void testAdd() throws Exception{
-        int a = 2;
-        int b = 3;
+        int valueA = 2;
+        int valueB = 3;
         Calculator calc = new Calculator();
-        int actual = calc.add(a,b);
+        int actual = calc.add(valueA,valueB);
 
         assertEquals(5, actual);
     }
     @Test
     public void testSub() throws Exception{
-        int a = 4;
-        int b = 2;
+        int valueA = 4;
+        int valueB = 2;
         Calculator calc = new Calculator();
-        int actual = calc.sub(a,b);
+        int actual = calc.sub(valueA,valueB);
 
         assertEquals(2, actual);
     }
 
     @Test
     public void testMul() throws Exception{
-        int a = 4;
-        int b = 2;
+        int valueA = 4;
+        int valueB = 2;
         Calculator calc = new Calculator();
-        int actual = calc.mul(a,b);
+        int actual = calc.mul(valueA,valueB);
 
         assertEquals(8, actual);
     }
