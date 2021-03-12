@@ -13,4 +13,40 @@ public class Calculator {
     public int mul(int valueA, int valueB){
         return valueA * valueB;
     }
+
+    public int div(int valueA, int valueB){
+        return valueA / valueB;
+    }
+
+    public boolean pair(int valueA){
+        if (valueA % 2  == 0) {
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+    public boolean premier(int valueA){
+        int result;
+        boolean flag = true;
+        for(int i=2; i <= valueA/2; i++)
+        {
+            //nombre est divisible par lui-meme
+            result = valueA%i;
+
+            //si le reste est 0, alors arrete la boucle. Sinon continuer la boucle
+            if(result == 0)
+            {
+                flag = false;
+                break;
+            }
+        }
+
+        if(flag)
+        {
+            return true;
+        }
+        else{ return false;}
+    }
 }

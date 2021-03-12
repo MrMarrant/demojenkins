@@ -45,4 +45,32 @@ class CalculatorTest {
         assertEquals(8, actual);
     }
 
+    @Test
+    public void testDiv() throws Exception{
+        int valueA = 6;
+        int valueB = 2;
+        Calculator calc = new Calculator();
+        int actual = calc.div(valueA,valueB);
+
+        assertEquals(3, actual);
+    }
+
+    @Test
+    public void testPair() throws Exception{
+        int valueA = 6;
+        Calculator calc = new Calculator();
+        boolean actual = calc.pair(valueA);
+
+        assertEquals(true, actual);
+    }
+
+    @Test
+    public void testPremier() throws Exception{
+        int valueA = 17;
+        Calculator calc = new Calculator();
+        boolean actual = calc.premier(valueA);
+
+        assertEquals(true, actual);
+    }
+
 }
